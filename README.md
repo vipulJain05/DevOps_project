@@ -12,6 +12,8 @@ The Terraform configuration is located in the `AWS_ASG` directory. In this direc
 -   `versions.tf`: The file where terraform provider details are located like AWS in this case.
 - The GitHub Actions workflow is defined in the `.github/workflows/terraform.yml` file.
 - To run terraform script using GitHub Actions, do an empty commit/changes to GitHub master branch which will automatically trigger the terraform script and will create an AWS Autoscaling group on AWS.
+- Add `AWS_REGION` at the environment of github project settings.
+- Make sure to add `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` as secret in github
 
 ## Deploy Stateful application on k8s cluster (minikube)
 
