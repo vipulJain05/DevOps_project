@@ -25,6 +25,7 @@ variable "HEALTH_CHECK" {
 variable "VPC_ZONE_IDENTIFIER" {
     description = "A list of subnet IDs to launch resources in"
     type        = list(string)
+    default     = ["subnet-1235678", "subnet-87654321"]
 }
 
 variable "LAUNCH_TEMPLATE_NAME" {
@@ -60,4 +61,5 @@ variable "EBS_VOLUME_SIZE" {
 variable "ENI_SECURITY_GROUPS" {
     description = "ENI security group"
     type        = list(string)
+    default     = ["sg-566564636","sg-8767867"]
 }
